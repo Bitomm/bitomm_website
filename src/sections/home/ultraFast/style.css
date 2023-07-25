@@ -1,0 +1,120 @@
+.ultra-fast {
+    padding-bottom: 6em;
+    padding: 120px 12px;
+    scroll-margin-top: -12em;
+    display: grid
+}
+
+@media (min-width: 768px) {
+    .ultra-fast {
+        padding: 24em 54px
+    }
+}
+
+@media (min-width: 1024px) {
+    .ultra-fast {
+        grid-template-columns: 1fr 1fr;
+        padding: 12em 120px;
+        scroll-margin-top: -6em
+    }
+}
+
+.ultra-fast>.left {
+    display: grid;
+    height: fit-content;
+    place-self: center;
+    gap: 24px
+}
+
+.ultra-fast>.left>.title {
+    color: #25d695;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.25
+}
+
+@media (min-width: 1024px) {
+    .ultra-fast>.left>.title {
+        font-size: 40px
+    }
+}
+
+@media (min-width: 1440px) {
+    .ultra-fast>.left>.title {
+        font-size: 56px
+    }
+}
+
+.ultra-fast>.left>.subtitle {
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    color: #c3c3c3
+}
+
+@media (min-width: 1024px) {
+    .ultra-fast>.left>.subtitle {
+        font-size: 24px;
+        line-height: 42px
+    }
+}
+
+.ultra-fast>.right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px
+}
+
+@media (min-width: 1024px) {
+    .ultra-fast>.right {
+        padding-top: unset;
+        width: unset;
+        padding: 6em
+    }
+}
+
+.ultra-fast>.right>.item {
+    display: flex;
+    flex-direction: column
+}
+
+.ultra-fast>.right>.item>.title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    font-family: "Arvo", serif;
+    text-shadow: none
+}
+
+@media (min-width: 1024px) {
+    .ultra-fast>.right>.item>.title {
+        font-size: 120px;
+        line-height: 150px;
+        text-align: right
+    }
+}
+
+.ultra-fast>.right>.item>.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #868991;
+    margin: 0px
+}
+
+@media (min-width: 1024px) {
+    .ultra-fast>.right>.item>.subtitle {
+        text-align: right
+    }
+}
+
+.ultra-fast>.right>.item>.subtitle.leftie {
+    text-align: left
+}

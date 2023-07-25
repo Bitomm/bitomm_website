@@ -1,0 +1,61 @@
+.save-the-children {
+  padding: 120px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../assets/home/goodcause-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1280px) {
+  .save-the-children {
+    padding: 160px 212px;
+  }
+}
+
+@media (min-width: 768px) {
+  .save-the-children {
+    padding: 160px 100px;
+  }
+}
+
+.save-the-children > .title {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 70px;
+  color: #25d695;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .save-the-children > .title {
+    font-size: 56px;
+  }
+}
+
+.save-the-children > .content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+  color: #c3c3c3;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .save-the-children > .content {
+    font-size: 24px;
+  }
+}
+
+.save-the-children > .logo {
+  padding-bottom: 40px;
+}
+
+.save-the-children > .donate-btn {
+  display: flex;
+  width: 240px;
+}

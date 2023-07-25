@@ -1,0 +1,601 @@
+.sustainable {
+  position: relative;
+  display: grid;
+  padding: 120px 12px;
+  scroll-margin-top: -12em;
+}
+
+@media (min-width: 768px) {
+  .sustainable {
+    padding: 6em 54px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sustainable {
+    padding: 120px;
+    scroll-margin-top: -6em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sustainable {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sustainable > .left {
+  display: grid;
+  place-items: center start;
+  gap: 4px;
+}
+
+.sustainable > .left > .pre-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  color: #f1c34e;
+}
+
+.sustainable > .left > .title {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 52.5px;
+  color: #25d695;
+  place-self: center start;
+  text-shadow: none;
+}
+
+@media (min-width: 1024px) {
+  .sustainable > .left > .title {
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
+
+.sustainable > .left > .details {
+  font-style: normal;
+  font-weight: 400;
+  color: #c3c3c3;
+  font-size: 18px;
+  line-height: 31.5px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .sustainable > .left > .details {
+    font-size: 24px;
+    line-height: 42px;
+  }
+}
+
+.sustainable > .left > .details > b {
+  font-weight: 500;
+  color: #fff;
+}
+
+.sustainable > .right {
+  place-self: center end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sustainable > .right > .item {
+  display: flex;
+  flex-direction: column;
+}
+
+.sustainable > .right > .item > .title {
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 150px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-shadow: none;
+}
+
+.sustainable > .right > .item > .title > p {
+  font-size: 100px;
+}
+
+.sustainable > .right > .item > .subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #868991;
+  margin-top: 0px;
+}
+
+/* dev incentive */
+.devs-incentive {
+  border-radius: 40px;
+  background: linear-gradient(225deg, #25d695 0%, #179b69 100%);
+  display: grid;
+  place-items: center;
+  gap: 24px;
+  padding: 160px 20px;
+  margin: 0px 12px;
+}
+
+@media (min-width: 768px) {
+  .devs-incentive {
+    margin: 0px 54px;
+    padding: 160px 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .devs-incentive {
+    margin: 0px 120px;
+    margin-bottom: 120px;
+  }
+}
+
+.devs-incentive > .graphic {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.devs-incentive > .title {
+  all: unset;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@media (min-width: 1024px) {
+  .devs-incentive > .title {
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
+
+.devs-incentive > .body {
+  all: unset;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media (min-width: 1024px) {
+  .devs-incentive > .body {
+    font-size: 24px;
+    line-height: 42px;
+  }
+}
+
+.devs-incentive > .buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .devs-incentive > .buttons {
+    flex-direction: unset;
+  }
+}
+
+.devs-incentive > .buttons > a {
+  cursor: pointer;
+  width: 100%;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .devs-incentive > .buttons > a {
+    width: unset;
+  }
+}
+
+.devs-incentive > .buttons > a.primary {
+  background: linear-gradient(315deg, #01327a 12.56%, #004dc2 89.48%);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  color: #ffffff;
+  padding: 23px 52px;
+}
+
+.devs-incentive > .buttons > a.secondary {
+  background: linear-gradient(
+    315deg,
+    rgba(1, 50, 122, 0.25) 12.56%,
+    rgba(0, 77, 194, 0.25) 89.48%
+  );
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  color: #ffffff;
+  padding: 23px 52px;
+  border: 2px solid #004dc2;
+}
+
+/* mainnet */
+
+.connect-mainnet.home-connect {
+  background-color: unset;
+}
+
+.connect-mainnet.home-connect .connect-info {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .connect-mainnet.home-connect .connect-info {
+    width: 40%;
+  }
+}
+
+.connect-mainnet.home-connect .connect-wallets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.connect-mainnet.home-connect .connect-wallets .wallet-button {
+  max-width: fit-content;
+  flex-grow: 1;
+}
+
+@media (min-width: 1280px) {
+  .connect-mainnet.home-connect .connect-wallets .wallet-button {
+    width: 45%;
+  }
+}
+
+.connect-mainnet {
+  padding: 100px 30px 120px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  background-color: #060f16;
+}
+
+@media (min-width: 1024px) {
+  .connect-mainnet {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .connect-mainnet {
+    padding: 120px 80px 120px 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .connect-mainnet {
+    padding: 240px 112px 240px 112px;
+  }
+}
+
+.connect-mainnet > .ellipse-left {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(25%);
+  background-image: url("/assets/images/ellipses/left.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100%;
+  width: 100%;
+}
+
+.connect-mainnet > .dots-right {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/assets/images/cex/dots.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  width: 300px;
+  height: 40%;
+  overflow: hidden;
+}
+
+.connect-mainnet > .connect-info {
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .connect-mainnet > .connect-info {
+    width: 50%;
+  }
+}
+
+.connect-mainnet > .connect-info > .connect-title {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 44px;
+  color: #25d695;
+}
+
+@media (min-width: 768px) {
+  .connect-mainnet > .connect-info > .connect-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .connect-mainnet > .connect-info > .connect-title {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .connect-mainnet > .connect-info > .connect-title {
+    font-size: 56px;
+    line-height: 70px;
+  }
+}
+
+.connect-mainnet > .connect-info > .connect-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #c3c3c3;
+}
+
+@media (min-width: 768px) {
+  .connect-mainnet > .connect-info > .connect-description {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .connect-mainnet > .connect-info > .connect-description {
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .connect-mainnet > .connect-info > .connect-description {
+    font-size: 24px;
+    line-height: 42px;
+  }
+}
+
+.connect-mainnet > .connect-wallets {
+  z-index: 2;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  .connect-mainnet > .connect-wallets {
+    width: 50%;
+  }
+}
+
+.connect-mainnet > .connect-wallets > .wallet-button {
+  cursor: pointer;
+  position: relative;
+  height: 65px;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .connect-mainnet > .connect-wallets > .wallet-button {
+    height: 100px;
+  }
+}
+
+.connect-mainnet > .connect-wallets > .wallet-button:hover > .wallet {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.connect-mainnet > .connect-wallets > .wallet-button:hover > .wallet-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.connect-mainnet > .connect-wallets > .wallet-button > .wallet {
+  width: auto;
+  height: 65px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .connect-mainnet > .connect-wallets > .wallet-button > .wallet {
+    height: 100px;
+  }
+}
+
+.connect-mainnet > .connect-wallets > .wallet-button > .wallet-hover {
+  position: absolute;
+  height: 65px;
+  width: auto;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .connect-mainnet > .connect-wallets > .wallet-button > .wallet-hover {
+    height: 100px;
+  }
+}
+
+.join-community {
+    padding: 120px 12px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px
+}
+
+@media (min-width: 768px) {
+    .join-community {
+        padding: 240px 54px
+    }
+}
+
+@media (min-width: 1024px) {
+    .join-community {
+        flex-direction: unset;
+        padding: 120px;
+        padding-bottom: 240px
+    }
+}
+
+.join-community>.right {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+@media (min-width: 768px) {
+    .join-community>.right {
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+
+@media (min-width: 1024px) {
+    .join-community>.right {
+        width: 40%;
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+.join-community>.right>a.card {
+    cursor: pointer;
+    background: linear-gradient(270deg, rgba(94, 103, 115, 0.15) 0%, rgba(94, 103, 115, 0) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    display: grid;
+    gap: 20px;
+    padding: 32px;
+    border-radius: 24px;
+    display: grid
+}
+
+.join-community>.right>a.card>.text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    color: #fff;
+    text-shadow: none
+}
+
+.join-community>.right>a.card>img {
+    width: 64px;
+    height: 64px;
+    filter: grayscale(1);
+    transition: filter 0.3s ease;
+    place-self: end
+}
+
+.join-community>.right>a.card:hover {
+    transform: translateY(1%) translateX(.5%) scale(101%);
+    box-shadow: 0px 0px 6px rgba(37, 211, 147, 0.48);
+    transition: 0.2s;
+    text-decoration: none
+}
+
+.join-community>.right>a.card:hover>img {
+    filter: unset
+}
+
+.join-community>.left {
+    width: 100%;
+    display: grid;
+    place-items: center start;
+    gap: 24px
+}
+
+@media (min-width: 1024px) {
+    .join-community>.left {
+        width: 40%
+    }
+}
+
+.join-community>.left>.title {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 52.5px;
+    color: #25d695;
+    place-self: center start
+}
+
+@media (min-width: 1024px) {
+    .join-community>.left>.title {
+        font-size: 56px;
+        line-height: 70px
+    }
+}
+
+.join-community>.left>.details {
+    font-style: normal;
+    font-weight: 400;
+    color: #c3c3c3;
+    font-size: 18px;
+    line-height: 31.5px
+}
+
+@media (min-width: 1024px) {
+    .join-community>.left>.details {
+        font-size: 24px;
+        line-height: 42px
+    }
+}
+
+.join-community>.left>.details>b {
+    font-weight: 500;
+    color: #fff
+}
+

@@ -1,0 +1,206 @@
+.home-intro {
+    margin: 120px auto;
+    text-align: center;
+    padding: 0px 12px;
+    display: grid;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+.home-intro>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #c3c3c3;
+}
+
+.home-intro>p>b {
+    font-weight: 700;
+    color: #fff;
+}
+
+.home-intro>p>a>span {
+    font-weight: 700;
+    color: #f1c34e;
+}
+
+@media (min-width: 1024px) {
+    .home-intro {
+        padding: unset;
+    }
+}
+
+.home-intro>.action {
+    place-self: center;
+    max-width: 240px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* meet Coreum */
+.meet-coreum {
+    padding: 64px 16px;
+    position: relative;
+    gap: 0.25em;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 75px;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meet-coreum .meet-text {
+    background: linear-gradient(81.8deg,
+            rgba(37, 214, 149, 0.1) -0.03%,
+            rgba(37, 214, 149, 0.65) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .meet-coreum .meet-text {
+        text-align: right;
+        font-size: 5rem;
+    }
+}
+
+.meet-coreum .coreum-text {
+    background: linear-gradient(225deg, #25d695 0%, #179b69 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: right;
+    justify-self: center;
+    align-self: end;
+}
+
+@media (min-width: 768px) {
+    .meet-coreum .coreum-text {
+        text-align: unset;
+        justify-self: unset;
+        align-self: unset;
+    }
+}
+
+.meet-coreum>iframe {
+    height: 25vh;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+    .meet-coreum>iframe {
+        height: 40vh;
+        width: unset;
+        border-radius: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .meet-coreum>iframe {
+        height: unset;
+        width: 60vw;
+    }
+}
+
+/* smart tokens */
+.smart-tokens-container {
+    display: grid;
+    place-items: center;
+    padding: 0px 12px;
+    margin: 80px 0px;
+}
+
+@media (min-width: 1280px) {
+    .smart-tokens-container {
+        margin: 160px 0px;
+    }
+}
+
+.smart-tokens-container>.st-box {
+    display: grid;
+    padding: 60px 50px;
+    background: linear-gradient(315deg, #01327a 12.56%, #004dc2 89.48%);
+    border-radius: 40px;
+    max-width: 1216px;
+    min-height: 572px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@media (min-width: 1280px) {
+    .smart-tokens-container>.st-box {
+        padding: 120px 100px;
+    }
+}
+
+.smart-tokens-container>.st-box>.st-graphic {
+    background-image: url("../../../assets/home/smart-tokens-graphic.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    border-radius: 40px;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+@media (min-width: 1280px) {
+    .smart-tokens-container>.st-box>.st-graphic {
+        background-size: contain;
+        opacity: 1;
+    }
+}
+
+.smart-tokens-container>.st-box>.st-info {
+    display: grid;
+    gap: 24px;
+    z-index: 2;
+}
+
+.smart-tokens-container>.st-box>.st-info>.st-title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 70px;
+    color: #ffffff;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+}
+
+.smart-tokens-container>.st-box>.st-info>.st-body {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 42px;
+    color: #ffffff;
+    max-width: 600px;
+}
+
+.smart-tokens-container>.st-box>.st-info>.st-action {
+    margin-top: 16px;
+    width: 240px;
+    height: 72px;
+    background: linear-gradient(225deg, #25d695 0%, #179b69 100%);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1b1d23;
+}

@@ -1,0 +1,309 @@
+nav.mobile-navigation {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  display: flex;
+  z-index: 999;
+}
+
+nav.mobile-navigation .coreum-logo {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+nav.mobile-navigation button {
+  background-color: #25d695;
+}
+
+nav.mobile-navigation button .navbar-toggler-icon {
+  color: #fff;
+  margin-right: auto;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+nav.mobile-navigation .spacer {
+  width: 35px;
+  margin-left: auto;
+}
+
+/* .navbar-expand .navbar-collapse{
+    display: block;
+} */
+
+nav.mobile-navigation > .mobile-menu {
+  transition: 0.2s ease;
+  background-color: #0b161e;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+nav.mobile-navigation > .mobile-menu.show {
+  transform: scaleY(100%);
+  display: grid;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links {
+  padding: 60px 30px 30px 30px;
+  display: grid;
+  gap: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #eeeeee;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > .link {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > .link > img {
+  transform: rotate(-90deg);
+  width: 1em;
+  height: 1em;
+  transition: 0.3s ease;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > .link > img.active {
+  transform: rotate(0deg);
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > a {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  cursor: pointer;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > a > img {
+  width: 32px;
+  height: 32px;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > .submenu-links {
+  display: none;
+  padding-left: 2em;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > .submenu-links.show {
+  display: grid;
+  gap: 24px;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > .submenu-links.show a {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  cursor: pointer;
+}
+
+nav.mobile-navigation > .mobile-menu .main-links > .submenu-links.show a > img {
+  width: 32px;
+  height: 32px;
+}
+
+nav.mobile-navigation.show::before {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  content: " ";
+  backdrop-filter: blur(1px);
+  filter: brightness(0.5);
+}
+
+nav.desktop-navigation {
+  display: flex;
+  width: 100%;
+  padding: 0em 3em;
+  padding-top: 2em;
+  align-items: center;
+  z-index: 100000;
+  position: relative;
+  gap: 30px;
+}
+
+@media (min-width: 1024px) {
+  nav.desktop-navigation {
+    padding: 0em 7em;
+    padding-top: 2em;
+    overflow: unset;
+    gap: 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  nav.desktop-navigation {
+    justify-content: space-between;
+  }
+}
+
+nav.desktop-navigation .coreum-logo {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+nav.desktop-navigation .links-header {
+  min-width: 350px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 1024px) {
+  nav.desktop-navigation .links-header {
+    max-width: 50%;
+    margin-right: 48px;
+  }
+}
+
+nav.desktop-navigation .links-header a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #eee;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 12px 24px;
+  transition: 0.2s;
+}
+
+nav.desktop-navigation .links-header a:hover {
+  text-decoration: none;
+  color: #25d695;
+}
+
+nav.desktop-navigation .links-header a > img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 768px) {
+  .mob-only {
+    display: none !important;
+  }
+}
+
+.dsk-only {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .dsk-only {
+    display: flex !important;
+  }
+}
+
+.ellipse1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/home/ellipse1.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+}
+
+/* dropdown */
+.dropdown-container {
+  position: relative;
+  border-radius: 4px;
+  padding: 12px 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #eee;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+@media (min-width: 1024px) {
+  .dropdown-container {
+    padding: 12px 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .dropdown-container {
+    padding: 12px 24px;
+  }
+}
+
+.dropdown-container > img {
+  width: 16px;
+  height: 16px;
+  transition: 0.25s;
+}
+
+.dropdown-container:hover {
+  background: #1d222c;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.dropdown-container:hover > img {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  visibility: hidden;
+  transition: 0.25s;
+  left: 0;
+}
+
+.dropdown-container:hover > .dropdown-menu {
+  margin-top: 0px;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  visibility: visible;
+  display: grid;
+  padding: 24px;
+  background: #1d222c;
+  white-space: nowrap;
+  place-items: center start;
+  border-radius: 0px 4px 4px 4px;
+  outline: none;
+  border: none;
+}
+
+@media (min-width: 1024px) {
+  .dropdown-container:hover > .dropdown-menu {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+}
+
+.dropdown-container:hover > .dropdown-menu > a {
+  padding: none;
+}
+
+.dropdown-container:hover > .dropdown-menu > a:hover {
+  color: #25d695;
+}

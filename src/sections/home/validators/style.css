@@ -1,0 +1,191 @@
+.validator-types {
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/sections/single.png");
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background-size: cover;
+}
+
+.validator-types>.title {
+    padding-top: 120px;
+    font-weight: 800;
+    text-align: center;
+    color: #25d695;
+    text-shadow: unset;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+@media (min-width: 1024px) {
+    .validator-types>.title {
+        padding-top: 180px;
+    }
+}
+
+@media (min-width: 768px) {
+    .validator-types>.title {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .validator-types>.title {
+        font-size: 56px;
+    }
+}
+
+.validator-types>.marquee {
+    width: 100%;
+    overflow: hidden;
+}
+
+.validator-types>.marquee.carousel-top {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .validator-types>.marquee.carousel-top {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+}
+
+.validator-types>.marquee.carousel-bottom {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+    .validator-types>.marquee.carousel-bottom {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+}
+
+.validator-cards {
+    scroll-margin-top: 12em;
+    padding: 0px 12px;
+    place-items: center;
+    justify-content: center;
+    row-gap: 36px;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.validator-cards a {
+    position: relative;
+}
+
+.validator-cards a img {
+    width: 216px;
+    height: 72px;
+}
+
+.validator-cards a .validatorImg {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.validator-cards a .validatorImg {
+    opacity: 0.5;
+}
+
+.validator-cards a .validatorImg:hover{
+    opacity: 1;
+}
+
+
+.validator-cards .validator-card {
+    display: grid;
+    padding: 48px;
+    gap: 24px;
+    background: linear-gradient(270deg,
+            rgba(94, 103, 115, 0.15) 0%,
+            rgba(94, 103, 115, 0) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    grid-template-rows: 64px 1fr;
+}
+
+@media (min-width: 1024px) {
+    .validator-cards .validator-card {
+        gap: 40px;
+    }
+}
+
+.validator-cards .validator-card>img {
+    width: 44px;
+    height: 44px;
+}
+
+@media (min-width: 1024px) {
+    .validator-cards .validator-card>img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.validator-cards .validator-card .info {
+    display: grid;
+    gap: 12px;
+    grid-template-rows: auto 1fr;
+}
+
+.validator-cards .validator-card .info .title {
+    font-weight: 600;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.32);
+    font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+    .validator-cards .validator-card .info .title {
+        font-size: 28px;
+    }
+}
+
+.validator-cards .validator-card .info .details {
+    font-weight: 400;
+    line-height: 1.75;
+    color: #c3c3c3;
+    font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+    .validator-cards .validator-card .info .details {
+        font-size: 20px;
+    }
+}
+
+.validators-description {
+    padding: 6em 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    text-align: center;
+    color: #eee;
+}
+
+@media (min-width: 1024px) {
+    .validators-description {
+        padding: 6em 240px;
+        font-size: 24px;
+    }
+}
+
+.validator-types .validator-buttons {
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between
+}
+
+.validator-types .validator-buttons a {
+    width: 47.5%
+}

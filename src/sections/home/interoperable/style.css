@@ -1,0 +1,153 @@
+.interoperable {
+    scroll-margin-top: -12em;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/sections/triple.png");
+    padding: 24em 12px;
+    display: grid
+}
+
+@media (min-width: 768px) {
+    .interoperable {
+        padding: 24em 54px
+    }
+}
+
+@media (min-width: 1024px) {
+    .interoperable {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 120px;
+        padding: 24em 120px;
+        padding-bottom: 12em;
+        row-gap: 240px
+    }
+}
+
+.interoperable>.left {
+    display: grid;
+    gap: 24px;
+    height: fit-content;
+    scroll-margin-top: 6em
+}
+
+.interoperable>.left>.title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 70px;
+    color: #25d695
+}
+
+.interoperable>.left>.details {
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    color: #c3c3c3
+}
+
+.interoperable>.right {
+    display: grid;
+    place-self: center start;
+    padding-top: 2em;
+    margin-top: 40px
+}
+
+@media (min-width: 1024px) {
+    .interoperable>.right {
+        padding-top: unset;
+        place-self: center end;
+        margin-top: unset
+    }
+}
+
+.interoperable>.right>.pre-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: #f1c34e
+}
+
+.interoperable>.right>.title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-shadow: none
+}
+
+@media (min-width: 768px) {
+    .interoperable>.right>.title {
+        font-size: 120px;
+        line-height: 150px
+    }
+}
+
+.interoperable>.right>.subtitle {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #868991;
+    place-self: center start
+}
+
+.interoperable>img {
+    place-self: center;
+    width: 100%;
+    height: 100%;
+    grid-row: 4
+}
+
+@media (min-width: 1024px) {
+    .interoperable>img {
+        place-self: center start;
+        width: 75%;
+        height: 75%;
+        grid-row: unset
+    }
+}
+
+.interoperable>.container {
+    all: unset;
+    display: grid;
+    padding: 0px;
+    grid-row: 3;
+    margin-top: 120px;
+    width: 100%
+}
+
+@media (min-width: 1024px) {
+    .interoperable>.container {
+        grid-row: unset;
+        margin-top: unset;
+        place-items: center
+    }
+}
+
+.interoperable>.container>.info {
+    display: grid;
+    gap: 24px;
+    height: fit-content;
+    scroll-margin-top: 6em
+}
+
+.interoperable>.container>.info>.title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 70px;
+    color: #25d695;
+    text-shadow: none
+}
+
+.interoperable>.container>.info>.details {
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    color: #c3c3c3
+}
